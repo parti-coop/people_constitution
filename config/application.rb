@@ -27,5 +27,8 @@ module PeopleConstitution
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Set de as the default language
+    config.i18n.default_locale = :ko
   end
 end

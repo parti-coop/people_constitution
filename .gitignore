@@ -13,11 +13,20 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
-/tmp/*
 !/log/.keep
-!/tmp/.keep
-
+/tmp
 /node_modules
 /yarn-error.log
-
 .byebug_history
+db/*.sqlite3
+db/*.sqlite3-journal
+public/uploads/*
+public/sitemaps/*
+dump.rdb
+
+app/assets/.DS_Store
+
+local_env.yml
+test_env.yml
+
+.DS_Store

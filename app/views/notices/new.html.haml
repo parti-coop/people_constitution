@@ -1,0 +1,9 @@
+%section.page-block
+  .container
+    %h2
+      공지사항
+      %small
+        = link_to '쓰기', new_notice_path
+
+
+    = render 'form'

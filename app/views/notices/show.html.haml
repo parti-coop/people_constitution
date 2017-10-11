@@ -1,0 +1,18 @@
+%section.page-block
+  .container
+    %h2{ style: 'font-weight: bold; margin-bottom: 12px;' }= @notice.title
+    %h4{ style: 'color: #999; font-weight: 400; margin-top: 12px; margin-bottom: 36px;' }
+      = @notice.created_at.to_date
+      &middot;
+      = link_to '수정', edit_notice_path(@notice), style: 'color: #999'
+
+    .notice__body{ style: 'font-size: 18px;' }
+      = simple_format @notice.body
+
+%section.page-block
+  .container
+    %h3
+      공지사항
+
+    %ul
+      = render @notices

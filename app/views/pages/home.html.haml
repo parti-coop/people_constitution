@@ -1,5 +1,3 @@
-%section{ style: "background-color: #519AAB; background-image: url(#{image_url('main.jpg')}); background-size: contain; background-position: center center; background-repeat: no-repeat; height: 400px;"}
-
 %section.page-block
   .container
     %h2{ style: 'font-weight: bold; margin-bottom: 12px;' } 네트워크
@@ -24,16 +22,13 @@
         .platform-card{ style: "background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.2), transparent), url(#{image_url('ssial.jpg')});"}
           %h2.platform-card__title 씨알재단
           .platform-card__description
-            설명이 들어갑니다
 
 %section.page-block
   .container
     %h3{ style: 'font-weight: bold;' } 공지사항
     %ul
-      %li
-        = link_to '공지사항', '#'
-        .text-muted 2017.09.27
+      = render @notices
 
-%section.page-block
+%section.page-block.hidden
   .container
     %h3{ style: 'font-weight: bold;' } 일정

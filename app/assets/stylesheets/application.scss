@@ -1,2 +1,38 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+*{
+  font-family:AppleSDGothic,"apple sd gothic neo","noto sans korean","noto sans korean regular","noto sans cjk kr","noto sans cjk","nanum gothic","malgun gothic",dotum,sans-serif;
+}
+body{
+  background-color:#fff;
+}
+
+.platform-card {
+  background-size: cover;
+  background-position: center center;
+  border-radius: 12px;
+  height: 300px;
+  padding: 24px;
+  padding-top: 48x;
+  margin-bottom: 36px;
+
+  a {
+    text-decoration: none;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 48px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+  }
+  &__description {
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+  }
+}
+
+.page-block {
+  padding: 48px 0;
+}

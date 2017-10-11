@@ -4,12 +4,24 @@
     %meta{:charset => "utf-8"}
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
 
+    %title 국민주도헌법개정전국네트워크
+
+    %meta{:content => "http://국민개헌.net/", :property => "og:url"}/
+    %meta{:content => "국민주도헌법개정전국네트워크", :property => "og:site_name"}/
+    %meta{:content => "국민주도헌법개정전국네트워크", :property => "og:title"}/
+    %meta{:content => image_url('main.jpg'), :property => "og:image"}/
+    %meta{:content => "국민주도헌법개정전국네트워크", :property => "og:description"}/
+    %meta{:content => "website", :property => "og:type"}/
+    %meta{:content => "국민주도헌법개정전국네트워크", :name => "twitter:site_name"}/
+    %meta{:content => image_url('main.jpg'), :name => "image"}/
+
     = stylesheet_link_tag 'application', media: 'all'
     %link{href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css", rel: "stylesheet"}
     /[if lt IE 9]
     %script{:src => "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"}
     %script{:src => "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"}
     = csrf_meta_tags
+
   %body{class: "app-#{params[:controller]} app-#{params[:controller]}-#{params[:action]}"}
     %section(style='position: fixed; z-index: 1000; width: 100%')
       .container

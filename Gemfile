@@ -8,6 +8,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
+gem 'unicorn'
 
 # database
 gem 'mysql2', '>= 0.3.13', '< 0.5'

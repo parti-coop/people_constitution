@@ -32,11 +32,6 @@
 
     = yield
 
-    %section#footer
-      .container{ style: 'border-top: 1px solid #ccc' }
-        %section{ style: 'padding: 14px 0' }
-          국민주도헌법개정네트워크
-          = link_to '국민개헌.net', root_path
-
+    = render 'footer'
     = javascript_include_tag 'application'
     = yield :script if content_for?(:script)

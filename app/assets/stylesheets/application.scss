@@ -37,9 +37,9 @@ body{
     color: #fff;
     font-size: 48px;
     text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    word-break: keep-all;
     @media (max-width: $screen-xs-max) {
       font-size: 32px;
-      word-break: break-all;
     }
   }
   &__description {

@@ -8,6 +8,18 @@ body{
   background-color:#fff;
 }
 
+#intro-section {
+  background-color: #519AAB;
+  background-image: image_url('main.jpg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 400px;
+  @media (max-width: $screen-xs-max) {
+    height: 200px;
+  }
+}
+
 .platform-card {
   background-size: cover;
   background-position: center center;
@@ -25,6 +37,10 @@ body{
     color: #fff;
     font-size: 48px;
     text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    @media (max-width: $screen-xs-max) {
+      font-size: 32px;
+      word-break: break-all;
+    }
   }
   &__description {
     color: #fff;

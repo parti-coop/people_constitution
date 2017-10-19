@@ -1,0 +1,20 @@
+%section.page-block
+  .container
+    %h2{ style: 'font-weight: bold; margin-bottom: 12px;' }
+      = @event.title
+      %span.text-muted{ style: 'font-weight: 400' }
+        %i.fa.fa-map-marker
+        = @event.location
+      %span.text-muted{ style: 'font-weight: 400' }
+        %i.fa.fa-calendar
+        = @event.opened_on.strftime('%m/%d')
+      %small
+        = link_to '수정', edit_event_path(@event), style: 'color: #999'
+
+%section.page-block
+  .container
+    %h3
+      일정
+
+    %ul
+      = render @events

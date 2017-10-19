@@ -1,0 +1,10 @@
+%li[notice]
+  %h4{ style: 'margin-bottom:6px' }
+    = link_to event do
+      = event.title
+      %span.text-muted{ style: 'font-weight: 400' }
+        %i.fa.fa-calendar
+        = event.opened_on.strftime('%m/%d')
+      %span.text-muted{ style: 'font-weight: 400' }
+        %i.fa.fa-map-marker
+        = event.location

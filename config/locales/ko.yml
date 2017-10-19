@@ -1,2 +1,7 @@
 ko:
-  hello: 'world'
+  activerecord:
+    attributes:
+      event:
+        title: 제목과 시간
+        location: 장소
+        opened_on: 날짜

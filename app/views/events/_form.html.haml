@@ -1,0 +1,15 @@
+= form_for @event do |f|
+  .form-group
+    = f.label :title
+    = f.text_field :title, class: 'form-control'
+
+  .form-group
+    = f.label :location
+    = f.text_field :location, class: 'form-control'
+
+  .form-group
+    = f.label :opened_on
+    = f.date_field :opened_on, class: 'form-control'
+
+  .form-group
+    = f.submit '저장', class: 'btn btn-default'

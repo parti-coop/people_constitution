@@ -1,4 +1,6 @@
 class NoticesController < ApplicationController
+  http_basic_authenticate_with name: ENV['ADMIN_ID'], password: ENV['ADMIN_PW'], except: [:index, :show]
+
   def index
     @notices = Notice.order("id DESC")
   end

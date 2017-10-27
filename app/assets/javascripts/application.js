@@ -12,7 +12,7 @@ $(function(){
     buttons: ['format', 'bold', 'italic', 'deleted', 'lists', 'image', 'file', 'link', 'horizontalrule'],
     callbacks: {
       imageUploadError: function(json, xhr) {
-        UnobtrusiveFlash.showFlashMessage(json.error.data[0], {type: 'notice'})
+        alert(json.error, {type: 'notice'})
       }
     },
     toolbarFixed: true,

@@ -23,7 +23,13 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
 gem 'haml-rails', '~> 0.9.0'
-gem 'redactor2_rails', '~> 0.1.3'
+gem 'redactor2_rails', github: 'osulyanov/redactor2_rails'
+
+# file upload
+gem 'carrierwave', '~> 0.10.0'
+gem "mini_magick"
+gem 'file_validators', '~> 2.0', '>= 2.0.2'
+gem "fog"
 
 #util
 gem 'envyable', '~> 0.2.0'
